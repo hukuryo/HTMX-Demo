@@ -1,0 +1,17 @@
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+<h1>Trigger Sample</h1>
+<h2>change</h2>
+<p id="target">入力してEnter押したらここが変わるよ
+</p>
+<input hx-get="https://jsonplaceholder.typicode.com/posts/1" hx-target="#target" hx-trigger="change"></input>
+
+<h2>Submit Sample</h1>
+  <p id="target2">入力して送信したらここが変わるよ</p>
+
+  <form hx-post="https://jsonplaceholder.typicode.com/posts" hx-target="#target2" hx-trigger="submit">
+    <label for="name">お名前：</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <br>
+    <input type="submit" value="送信">
+  </form>

@@ -1,0 +1,12 @@
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
+<h2>トリガーフィルター</h2>
+<p id="target">SHIFTキーを入力しながら、クリックしたらここが変わるよ</p>
+
+<button
+  hx-get="https://jsonplaceholder.typicode.com/posts/1"
+  hx-target="#target"
+  hx-trigger="click[shiftKey]"
+>
+  クリック
+</button>
