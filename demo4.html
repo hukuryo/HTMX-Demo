@@ -1,0 +1,9 @@
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+<h2>delay sample</h2>
+<p id="target">1秒間キーを入力しなかったらここが変わるよ。</p>
+
+<input
+  hx-get="https://jsonplaceholder.typicode.com/posts/1"
+  hx-trigger="keyup changed delay:1s"
+  hx-target="#target"
+/>
