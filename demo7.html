@@ -1,0 +1,13 @@
+Result Skip Results Iframe EDIT ON
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+<h2>sample</h2>
+<p id="target">Alertに同意するとここが変わるよ。</p>
+
+<button
+  hx-get="https://jsonplaceholder.typicode.com/posts/1"
+  hx-trigger="click"
+  hx-target="#target"
+  hx-confirm="本当に押してもいいですか？？"
+>
+  押すな危険！
+</button>
