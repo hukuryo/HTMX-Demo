@@ -1,0 +1,13 @@
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
+<h2>継承サンプル</h2>
+<div hx-confirm="アニメーションを実行？">
+  <p>好きなボタンを選んでね</p>
+  <button hx-delete="https://jsonplaceholder.typicode.com/posts/1">
+    ボタンA
+  </button>
+  <button hx-post="https://jsonplaceholder.typicode.com/posts/1">
+    ボタンB
+  </button>
+  <button hx-confirm="unset" hx-get="/">ボタンC</button>
+</div>
